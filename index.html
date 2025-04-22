@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Salmito Grifes</h1>
+    <button id="toggleFilterButton">Mostrar Filtro</button>
+
+    <!-- Logo centralizada -->
+    <img src="imagens/logo1.png" alt="Logo Salmito Grifes" />
+ 
+  </header>
+
+  <!-- Barra de Filtro de Categorias -->
+  <aside class="sidebar">
+      <h2>Filtros</h2>
+      <ul class="category-filter">
+          <li><button class="filter-button" data-category="todos">Todos</button></li>
+          <li><button class="filter-button" data-category="tênis">Tênis</button></li>
+          <li><button class="filter-button" data-category="calças">Calças</button></li>
+          <li><button class="filter-button" data-category="shorts">Shorts</button></li>
+          <li><button class="filter-button" data-category="coecas">Coecas</button></li>
+          <li><button class="filter-button" data-category="camisas">Camisas</button></li>
+          <li><button class="filter-button" data-category="jaquetas">Jaquetas</button></li>
+          <li><button class="filter-button" data-category="moletons">Moletons</button></li>
+          <li><button class="filter-button" data-category="bonés">Bonés</button></li>
+      </ul>
+  </aside>
+
+  <!-- Grid de Produtos -->
+  <main class="product-grid-container">
+      <div class="product-grid">
+          <!-- Produtos serão inseridos aqui dinamicamente -->
+      </div>
+  </main>
+
+  <!-- Modal de Produto -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <p id="modalPrice"></p>
+        <a id="whatsappLink" href="" target="_blank">
+            <button id="whatsappButton">Entrar em Contato via WhatsApp</button>
+        </a>
+        <button id="modal-close">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
